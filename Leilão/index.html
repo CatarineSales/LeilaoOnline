@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leilão de Produto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="auction-container">
+        <h1>Leilão de Produto</h1>
+        <p><strong>Produto:</strong> Smartwatch X-Pro</p>
+        <p><strong>Descrição:</strong> Um smartwatch com diversas funcionalidades para acompanhar seu dia a dia.</p>
+        <p><strong>Lance Mínimo:</strong> R$ <span id="minBid">500</span>,00</p>
+
+        <form id="auctionForm">
+            <label for="bidAmount">Insira seu lance:</label>
+            <input type="number" id="bidAmount" placeholder="Digite seu lance" required>
+            <button type="submit">Enviar Lance</button>
+        </form>
+
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
